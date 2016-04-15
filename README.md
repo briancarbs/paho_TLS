@@ -1,3 +1,9 @@
+Found this gradle build of paho to make incorporating JavaComponents easier. Haven't made much of a contribution here yet as I've run into issues utilizing the BKS keystores. This was an easy to use and configre proof of concept for connecting to a non encrypted local MQTT broker via an Android Studio virtual device. This [site](https://eclipse.org/paho/clients/android/sample/) shows exactly how to utilize the app to make a connection to an MQTT broker.
+
+
+
+
+
 # Getting started
 
 ## Download Android Studio
