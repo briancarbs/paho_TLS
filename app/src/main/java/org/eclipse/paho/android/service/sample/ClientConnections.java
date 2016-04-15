@@ -236,10 +236,11 @@ public class ClientConnections extends ListActivity {
     boolean cleanSession = (Boolean) data.get(ActivityConstants.cleanSession);
 
     boolean ssl = (Boolean) data.get(ActivityConstants.ssl);
+    Log.e("SSLConnection", "path: " + (String) data.get(ActivityConstants.ssl_key));
     String ssl_key = (String) data.get(ActivityConstants.ssl_key);
     String uri = null;
     if (ssl) {
-      Log.e("SSLConnection", "Doing an SSL Connect");
+      Log.e("SSLConnection", "Doing an SSL Connect" + uri);
       uri = "ssl://";
 
     }

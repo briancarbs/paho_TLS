@@ -25,6 +25,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.net.ssl.SSLSocketFactory;
+
 /**
  * 
  * Represents a {@link MqttAndroidClient} and the actions it has performed
@@ -98,6 +100,7 @@ public class Connection {
       int port, Context context, boolean sslConnection) {
     String handle = null;
     String uri = null;
+
     if (sslConnection) {
       uri = "ssl://" + host + ":" + port;
       handle = uri + clientId;
